@@ -1,0 +1,11 @@
+USE Master;
+
+-- Determine AG for DB first!
+
+ALTER AVAILABILITY GROUP [IBS-AG] REMOVE DATABASE Saman;
+
+
+ALTER DATABASE [Saman]
+SET OFFLINE WITH ROLLBACK IMMEDIATE;
+
+-- Delete DB from Secondary
