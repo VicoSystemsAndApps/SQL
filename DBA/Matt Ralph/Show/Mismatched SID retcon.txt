@@ -1,0 +1,22 @@
+USE [DATABASE];
+GO
+
+SELECT      dp.name AS DbUser
+,           dp.sid AS DbUserSid
+,           sp.name AS ServerLogin
+,           sp.sid AS ServerSid
+FROM        sys.database_principals dp
+LEFT JOIN   sys.server_principals sp ON sp.name = dp.name
+WHERE       dp.name = N'[LOGIN]';
+
+
+ALTER USER [LOGIN] WITH LOGIN = [LOGIN];
+GO
+
+SELECT      dp.name AS DbUser
+,           dp.sid AS DbUserSid
+,           sp.name AS ServerLogin
+,           sp.sid AS ServerSid
+FROM        sys.database_principals dp
+LEFT JOIN   sys.server_principals sp ON sp.name = dp.name
+WHERE       dp.name = N'[LOGIN]';

@@ -1,0 +1,23 @@
+    DECLARE	@Subject		NVARCHAR(1000)
+	,		@OperatorEmail	NVARCHAR(256)
+	,		@ProfileName	NVARCHAR(256);
+ 
+	SELECT	@OperatorEmail = email_address
+	FROM	msdb.dbo.sysoperators
+	WHERE	[name] = 'DocumotiveAlert';
+ 
+	SELECT	*
+	FROM	msdb.dbo.sysoperators
+	WHERE	[name] = 'DocumotiveAlert';
+ 
+	SELECT	@ProfileName = name
+	FROM	msdb.dbo.sysmail_profile
+	WHERE	profile_id = 1;
+ 
+ 
+	EXEC msdb.dbo.sp_send_dbmail		@profile_name	= @ProfileName
+									,	@recipients		=  @OperatorEmail
+									,	@subject		= 'Test Job'
+									,	@body			= 'Rays test Job';
+ 
+Just change @recipients to what you want. if you want to use your own email.  or look where @operatorname gets populated and change what you filter on

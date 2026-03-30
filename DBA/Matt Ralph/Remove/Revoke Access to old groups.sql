@@ -1,0 +1,2 @@
+REVOKE CONNECT SQL FROM [WDH\SQL_Server_Admin];
+REVOKE CONNECT SQL FROM [WDH\SQLServerDatabaseAdministrators];

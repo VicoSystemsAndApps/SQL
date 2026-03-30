@@ -1,0 +1,6 @@
+SELECT 
+    j.job_id,
+    j.name AS job_name,
+    SUSER_SNAME(j.owner_sid) AS job_owner
+FROM msdb.dbo.sysjobs j
+ORDER BY job_owner, job_name;

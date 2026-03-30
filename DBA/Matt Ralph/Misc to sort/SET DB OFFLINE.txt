@@ -1,0 +1,1 @@
+Alter Database [DATABASE] set offline with rollback immediate

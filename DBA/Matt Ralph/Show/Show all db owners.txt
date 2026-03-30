@@ -1,0 +1,5 @@
+SELECT
+    name AS DatabaseName,
+    SUSER_SNAME(owner_sid) AS Owner
+FROM sys.databases
+ORDER BY name;

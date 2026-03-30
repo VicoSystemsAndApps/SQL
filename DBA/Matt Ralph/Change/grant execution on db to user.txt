@@ -1,0 +1,5 @@
+USE master;
+GO
+USE [DB] -- ADD DB required (only 1 at a time)
+
+GRANT EXEC TO [WDH\{USER}];

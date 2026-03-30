@@ -1,0 +1,7 @@
+SELECT COUNT(1) AS [texts per date],
+YEAR(wdh_created_date) AS [year],
+MONTH(wdh_created_date) AS [month]
+FROM [Pro2SQL_WDH].[dbo].[wdh_sms_details]
+GROUP BY YEAR(wdh_created_date),
+MONTH(wdh_created_date)
+ORDER BY YEAR(wdh_created_date) DESC, MONTH(wdh_created_date);

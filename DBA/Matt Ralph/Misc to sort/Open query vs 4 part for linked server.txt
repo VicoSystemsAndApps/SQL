@@ -1,0 +1,4 @@
+Open query vs 4 part for linked server:
+SELECT * FROM OPENQUERY([TSTVIBSSQL02], 'select * from Pro2SQL_WDH.dbo.jc_map where type_code = ''P2p''');
+ 
+select * from TSTVIBSSQL02.Pro2SQL_WDH.dbo.jc_map where type_code = 'P2p'

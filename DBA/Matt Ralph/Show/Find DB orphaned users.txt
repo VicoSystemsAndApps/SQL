@@ -1,0 +1,18 @@
+-- To find orphaned users in your SQL Server database (users that exist in the database but do not have a corresponding login at the server level):
+
+USE [YourDatabaseName];
+GO
+
+SELECT 
+    dp.name AS OrphanedUser,
+    dp.type_desc AS UserType
+FROM 
+    sys.database_principals dp
+LEFT JOIN 
+    sys.server_principals sp 
+    ON dp.sid = sp.sid
+WHERE 
+    dp.type IN ('S', 'U', 'G') -- SQL user, Windows user, Windows group
+    AND dp.sid IS NOT NULL
+    AND sp.sid IS NULL
+    AND dp.name NOT IN ('dbo', 'guest', 'INFORMATION_SCHEMA', 'sys');

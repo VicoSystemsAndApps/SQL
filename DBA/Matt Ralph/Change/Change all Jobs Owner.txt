@@ -1,0 +1,28 @@
+-- Replace 'NewOwnerLogin' with the name of the new job owner  
+DECLARE @NewOwnerLogin NVARCHAR(128) = 'WDH\SQL_DBA_Admin_User';  
+  
+-- Update all jobs to the new owner  
+DECLARE @JobName NVARCHAR(128);  
+  
+DECLARE job_cursor CURSOR FOR  
+SELECT name  
+FROM msdb.dbo.sysjobs;  
+  
+OPEN job_cursor;  
+  
+FETCH NEXT FROM job_cursor INTO @JobName;  
+  
+WHILE @@FETCH_STATUS = 0  
+BEGIN  
+    -- Update the job owner  
+    EXEC msdb.dbo.sp_update_job   
+        @job_name = @JobName,   
+        @owner_login_name = @NewOwnerLogin;  
+      
+    FETCH NEXT FROM job_cursor INTO @JobName;  
+END  
+  
+CLOSE job_cursor;  
+DEALLOCATE job_cursor;  
+  
+PRINT 'All jobs have been updated to the new owner.';  
