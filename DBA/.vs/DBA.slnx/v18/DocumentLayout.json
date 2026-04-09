@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Source\\Git\\SQL\\DBA\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Git\\SQL\\DBA\\Quick Fire Overview\\05 - Last Backups.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quick Fire Overview\\05 - Last Backups.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Source\\Git\\SQL\\DBA\\Quick Fire Overview\\05a - Backup Deeper Dive.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quick Fire Overview\\05a - Backup Deeper Dive.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "05a - Backup Deeper Dive.sql - PRDVATHENA17.DBAMaint (WDH\\mradm (69))",
+              "DocumentMoniker": "C:\\Source\\Git\\SQL\\DBA\\Quick Fire Overview\\05a - Backup Deeper Dive.sql",
+              "RelativeDocumentMoniker": "Quick Fire Overview\\05a - Backup Deeper Dive.sql",
+              "ToolTip": "C:\\Source\\Git\\SQL\\DBA\\Quick Fire Overview\\05a - Backup Deeper Dive.sql - PRDVATHENA17.DBAMaint (WDH\\mradm (69))",
+              "RelativeToolTip": "Quick Fire Overview\\05a - Backup Deeper Dive.sql - PRDVATHENA17.DBAMaint (WDH\\mradm (69))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-07T09:15:03.352Z",
+              "EditorCaption": " - PRDVATHENA17.DBAMaint (WDH\\mradm (69))"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "05 - Last Backups.sql - PRDVATHENA17.DBAMaint (WDH\\mradm (62))",
+              "DocumentMoniker": "C:\\Source\\Git\\SQL\\DBA\\Quick Fire Overview\\05 - Last Backups.sql",
+              "RelativeDocumentMoniker": "Quick Fire Overview\\05 - Last Backups.sql",
+              "ToolTip": "C:\\Source\\Git\\SQL\\DBA\\Quick Fire Overview\\05 - Last Backups.sql - PRDVATHENA17.DBAMaint (WDH\\mradm (62))",
+              "RelativeToolTip": "Quick Fire Overview\\05 - Last Backups.sql - PRDVATHENA17.DBAMaint (WDH\\mradm (62))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-07T09:14:53.251Z",
+              "EditorCaption": " - PRDVATHENA17.DBAMaint (WDH\\mradm (62))"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
